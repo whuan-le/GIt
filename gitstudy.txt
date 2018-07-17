@@ -1,0 +1,19 @@
+git init										:创建版本库
+
+git add readme.txt					:将readme.txt放入缓存区
+
+git commit -m "word"				:将缓存区的内容提交库
+
+git checkout -- readme.txt	：将工作空间中的readme.txt文件返回致上一版本，若没上传缓存空间，取最新版本。若已上传缓存空间，取缓存空间中的版本
+
+git reset HEAD readme.txt		：撤销缓存区的readme.txt
+
+git diff HEAD -- readme.txt	：命令可以查看工作区和版本库里面最新版本的区别
+
+git log --pretty=oneline		：查看每一个版本的commit id
+
+git reset --hard HEAD^			：回到上一版本
+
+git reset --hard 1094a			：回到指定commit id 的位置 1094a（为指定ip的头几位）
+
+git rm test.txt							：将版本库中的test.txt删除
