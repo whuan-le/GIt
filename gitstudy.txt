@@ -17,3 +17,11 @@ git reset --hard HEAD^			：回到上一版本
 git reset --hard 1094a			：回到指定commit id 的位置 1094a（为指定ip的头几位）
 
 git rm test.txt							：将版本库中的test.txt删除
+
+git remote add origin git@github.com:michaelliao/learngit.git	与github建立联系
+
+git push -u origin master		：第一次推送github
+
+git push origin master			：以后的更新github
+
+ssh -T git@gitee.com 				：检测是否连通
